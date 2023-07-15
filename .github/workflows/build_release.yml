@@ -44,9 +44,10 @@ jobs:
       - name: Upload Release
         uses: actions/upload-release-asset@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./kms-tools.zip
           asset_name: kms-tools-v${{ steps.version.outputs.value }}.zip
           asset_content_type: application/zip
+#
