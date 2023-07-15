@@ -53,4 +53,4 @@ jobs:
           asset_path: ./kms-tools.zip
           asset_name: kms-tools-v${{ steps.version.outputs.value }}.zip
           asset_content_type: application/zip
-#
+
